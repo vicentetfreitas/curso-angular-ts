@@ -12,3 +12,18 @@
 <button [disabled]="checkedDisabled">Button</button>
 <br>
 <img [src]="imgSrc" [alt]="imgAlt" />
+
+<hr>
+
+<h2>Event Binding</h2>
+<br>
+<button (click)="alertInfoSimples()">Evento</button>
+<br>
+<button (click)="alertInfoSimplesDois('Deu bom de forma diferente!')">Evento 2</button>
+<br>
+<button (click)="alertInfoEvento($event)">Evento 3</button>
+<br>
+<div (mousemove)="mouseMoveMudandoCor($event)" style="background-color: tomato; width: 300px; height: 300px;">
+</div>
+<p>{{ position.x }}</p>
+<p>{{ position.y }}</p>

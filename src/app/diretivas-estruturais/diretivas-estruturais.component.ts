@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./diretivas-estruturais.component.scss'],
 })
 export class DiretivasEstruturaisComponent implements OnInit {
+
   public condition: boolean = true;
   public conditionClick: boolean = true;
   // array de objetos
@@ -14,7 +15,7 @@ export class DiretivasEstruturaisComponent implements OnInit {
     {nome:"Freitas Teixeira", idade:20},
     {nome:"Vicente Teixeira de Freitas",idade:15}
   ];
-
+  public nome: string= 'vicente';
   constructor() {}
 
   ngOnInit(): void {

@@ -1,3 +1,14 @@
+<br>
+<div *ngIf="nome != 'Vicente'">
+    <h2>[ngModel]</h2>
+</div>
+<input type="text" [(ngModel)]="nome">
+<br> {{ nome }}
+<br>
+<button (click)="salvar()">Salvar</button>
+<li *ngFor="let item of lista">{{ item.nome }}</li>
+<br>
+<hr>
 <h2>[ngClass]</h2>
 <p [ngClass]="{'ativo': valor, 'desativo': !valor}">Cor</p>
 <hr>
@@ -5,3 +16,5 @@
 <h2>[ngClass]</h2>
 <br>
 <p [ngStyle]="{'height': heightPx, 'background': backgroundColor}">ngStyle</p>
+<br>
+<hr>

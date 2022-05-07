@@ -1,3 +1,4 @@
+<h2>*ngIf</h2>
 <p *ngIf="true">Verdadeiro</p>
 <p *ngIf="condition">Condition</p>
 <p *ngIf="condition; else elseBlock">elseBlock</p>
@@ -8,3 +9,13 @@
 <p *ngIf="conditionClick">Verdadeiro</p>
 <p *ngIf="!conditionClick">Falso</p>
 <button (click)="onClick()">Click</button>
+<hr>
+<h2>*ngFor</h2>
+<ul>
+    <li *ngFor="let item of lista; let i = index;" (click)="onClickEventList(i)">
+        [{{ i }}] {{ item.nome }}. Idade = {{ item.idade }}
+    </li>
+</ul>
+<button (click)="onClickAdicionarLista()">Adicionar</button>
+<br>
+<hr>

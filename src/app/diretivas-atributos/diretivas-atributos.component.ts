@@ -10,7 +10,7 @@ export class DiretivasAtributosComponent implements OnInit {
   public heightPx: string = "20px";
   public backgroundColor: string = "tomato";
   public nome: string = "";
-  public lista: Array<{nome: string}>= [];
+  public lista: Array<{nome: string}>= [{nome:'Vicente Freitas'}];
   constructor() {}
 
   ngOnInit(): void {
